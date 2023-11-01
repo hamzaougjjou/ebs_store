@@ -1,0 +1,199 @@
+
+@import url("./loading.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+:root {
+    --main-porpul: #685CE4;
+    --blue: #5FCBFB;
+    --second-grey: #A8A8A8;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    /* padding: 20px 0 30px 0; */
+}
+
+body {
+    background: rgb(246, 246, 249);
+    font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bg-white{
+    background: rgb(255, 255, 255);
+}
+
+.color-success{
+    color: rgb(0, 207, 69);
+}
+.color-error{
+    color: rgb(207, 0, 69);
+}
+.box {
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: rgba(33, 33, 52, 0.1) 0px 2px 15px;
+    /* padding: 8px 4px; */
+}
+
+.btn {
+    /* height: 2rem; */
+    /* position: relative; */
+    outline: none;
+    flex-direction: row;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid rgb(229, 229, 243);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.d-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pagination-container */
+.pagination-container{
+    /* background-color: red; */
+    max-width: 80%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+.pagination-container nav ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination-container nav ul .number{
+    border: 1px solid #5FCBFB;
+    border-radius: 2px;
+    width: 40px;
+    aspect-ratio: 1/1;
+    font-weight: bold;
+}
+.pagination-container nav ul .number a{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-container nav ul .number.active{
+    /* background-color: #5FCBFB !important; */
+    border: 1px solid #000000;
+    color: #fff;
+}
+.pagination-container nav ul .number.active a{
+    background-color: #5FCBFB;
+    color: #fff;
+}
+
+/* +++++++++ next and previus buttons */
+.pagination-container nav ul .next.inabed *,
+.pagination-container nav ul .previous.inabed *{
+    color: #5FCBFB;
+    font-weight: bold;
+}
+
+/* pagination-container */
+
+
+
+/* ====================================================================== */
+
+#select-asset-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+#select-asset-container .app-container{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 90%;
+    height: 90vh;
+
+    display: grid;
+    grid-template-rows:auto auto 100px;
+    position: relative;
+}
+
+#select-asset-container .app-container .files-container{
+    /* background-color: #00f; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+#select-asset-container .app-container .btns-container{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 15px !important;
+}
+
+.selected-asset{
+    border: 3px solid dodgerblue !important;
+}

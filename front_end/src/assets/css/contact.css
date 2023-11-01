@@ -1,0 +1,188 @@
+
+.contact-slider {
+    width: 100%;
+    height: 60vh;
+    /* background-color: red; */
+    position: relative;
+    /* background-image: url("./../imgs/contact.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right ;
+}
+
+.contact-slider .slider-content {
+    position: absolute;
+    left: 50%;
+    min-width: 80%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    background-color: rgb(41, 243, 0, .5);
+    animation-name: slider-content-animation;
+    animation-duration: 1s;
+    top: 40%;
+}
+
+@keyframes slider-content-animation {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 40%;
+    }
+}
+
+.contact-slider .slider-content>h2 {
+    text-align: center;
+    color: rgb(248, 3, 207);
+}
+
+.contact-slider .slider-content a {
+    position: absolute;
+    background-color: rgb(6, 226, 226);
+    left: 10px;
+    bottom: 10px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.contact-slider .slider-content a:hover {
+    background-color: rgb(2, 194, 194);
+    color: #fff;
+}
+
+/* Style the contactContainer/contact section */
+.contactContainer {
+    border-radius: 5px;
+}
+.contactContainer .contactFormHeading * {
+    color: #4CAF50;
+}
+
+
+.contactContainer .contact-info-section {
+    min-height: 250px;
+    background-color: #45a049;
+    margin: 20px auto;
+    display: grid;
+    display: -moz-grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.contactContainer .contact-info-section>div {
+    /* height: 110px; */
+    min-width: 100px;
+    text-align: center;
+}
+
+.contactContainer .contact-info-section>div i {
+    color: white;
+    font-size: 35px;
+}
+
+.contactContainer .contact-info-section>div h2 {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+.contactContainer .contact-info-section>div p {
+    color: white;
+}
+
+/* contact section styling */
+
+
+/* error styling */
+#send-message-error {
+    display: block;
+    padding-top: 50px;
+    color: red;
+}
+
+/* Style inputs */
+input[type=text],
+input[type=number],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#contact-section,
+.row {
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;   
+    /* flex-direction: column-reverse; */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    width: 50%;
+    min-height: 500px;
+    padding: 10px;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+
+    .contactContainer .contact-info-section {
+        height: 450px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        /* gap: 20px; */
+    }
+
+    .contactContainer .contact-info-section .phone {
+        justify-content: center;
+        justify-self: center;
+        margin: 0 auto;
+        /* gap: 20px; */
+    }
+
+    #contact-section {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .slider-content {
+        width: 90%;
+    }
+}

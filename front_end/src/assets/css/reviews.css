@@ -1,0 +1,55 @@
+.reviews-container{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: yellowgreen;
+}
+
+.review-item{
+    width: 300px;
+    height: 190px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px #12121291;
+    padding: 10px;
+    position: relative;
+}
+.review-item .profile-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 6px solid yellowgreen;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+}
+.review-item h3{
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.review-item .starts-c{
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+}
+.review-item .starts-c .icon{
+    font-size: 18px;
+    color: yellow;
+    /* background-color: #ff0; */
+}
+
+.review-item .starts-c .icon:nth-child(1){font-size: 18px;}
+.review-item .starts-c .icon:nth-child(2){font-size: 20px;}
+.review-item .starts-c .icon:nth-child(3){font-size: 20px;}
+.review-item .starts-c .icon:nth-child(4){font-size: 20px;}
+.review-item .starts-c .icon:nth-child(5){font-size: 18px;}
+
+.review-item .review-content{
+    margin: 5px;
+    font-weight: 400;
+}
+
+

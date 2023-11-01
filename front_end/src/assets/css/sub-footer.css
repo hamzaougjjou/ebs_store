@@ -1,0 +1,71 @@
+
+.info{
+    background-color: rgb(255, 149, 149);
+    width: 100%;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-family: "Montserrat", sans-serif; 
+}
+.info > div {
+    margin-top: 20px;
+    text-align: center;
+}
+.info > div > h3{
+    text-align: center;
+}
+/* ---------------------------------------#contact ----------------------------- */
+.info #contact form p{
+    margin-top: 20px;
+}
+.info #contact form input ,.info #contact form textarea{
+    width: 90%;
+    max-width: 300px;
+    outline: none;
+    border:none;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    border: .1px solid #9c9b9b;
+}
+.info #contact input[type="submit"]{
+    width: calc( 100% - 40px );
+    margin: 40px auto;
+    background-color: rgb(71, 63, 63);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.info #contact form input[type="submit"]:hover{
+    background-color: rgb(3, 3, 3);
+}
+/* ---------------------------------------#contact ----------------------------- */
+
+/* ---------------------------------------#about ----------------------------- */
+.info #about section{
+    margin-top: 20px;
+}
+.info #about section p {
+    padding-bottom: 20px;
+}
+
+.info #about section p a {
+    color: #121212;
+    display: block;
+    text-decoration: underline;
+}
+.info #about section p a:hover{
+    color: green;
+}
+/* ---------------------------------------#about ----------------------------- */
+
+/* ---------------------------------------#store ----------------------------- */
+.info #store section{
+    margin-top: 20px;
+}
+.info #store section p{
+    color: #121212;
+    padding-bottom: 20px;
+}
+/* ---------------------------------------#store ----------------------------- */
+

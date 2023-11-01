@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+    width: 100% !important;
+    height: 100vh !important;
+    border-color: black !important;
+    z-index: 999999 !important;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.error-container {
+    height: 25px;
+    margin: 15px 0;
+}
+
+.error-container .auth-error {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    background-color: #e2040467;
+    height: 100%;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.login-page .form {
+    position: absolute;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 500px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0px 2px 5px 0px rgba(0, 0, 0, 0.24);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-page .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.login-page button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.login-page .form .btn-on-loading{
+    opacity: 0.6;
+}
+.login-page .form .btn-on-loading *{
+    color: #FFFFFF;
+}
+.login-page .form .btn-on-loading,
+.login-page .form .btn-submit {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-page .form .btn-submit:hover,
+.login-page .form .btn-submit:active,
+.login-page .form .btn-submit:focus {
+    background: #43A047;
+}
+
+.login-page .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.login-page .form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.close-login-page {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    top: -22.5px;
+    right: -22.5px;
+}
+
+.login-with-google {
+    margin-top: 10px;
+    background-color: cornflowerblue !important;
+}
+
+h1 , .auth-title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}

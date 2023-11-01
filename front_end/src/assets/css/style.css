@@ -1,0 +1,75 @@
+
+.slide-container{
+    /* background-image: url("./imgs/app.jpg"); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.message-container {
+    background-color: rgb(0, 120, 150);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.message-container #message {
+    font-weight: bold;
+    font-family: var(--mainFont);
+    font-size: 22px;
+    color: white;
+}
+
+/* collections secttion */
+
+.collections-secttion>h1 {
+    text-align: center;
+    padding: 20px auto;
+}
+
+.collections-secttion>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.collections-secttion>div .collection-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid #1212124d; */
+    padding: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    box-shadow: 0px 0px 4px 0px #121212;
+    overflow: hidden;
+}
+
+.collections-secttion>div .collection-item img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.collections-secttion>div .collection-item a {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 40px);
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgb(6, 211, 126);
+    padding: 10px 20px;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.collections-secttion>div .collection-item:hover .collection-link {
+    top: 50%;
+}
+
+.collections-secttion>div .collection-item a:hover {
+    color: white;
+    background-color: rgb(3, 167, 167);
+}
+

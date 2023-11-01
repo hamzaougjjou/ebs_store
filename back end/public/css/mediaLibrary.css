@@ -1,0 +1,520 @@
+.app .app-container {
+    padding: 30px;
+    width: 100% !important;
+    position: relative;
+}
+
+/* ============================= */
+
+.header {
+    /* background-color: red; */
+    width: 100% !important;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-btns-container {
+    display: flex;
+    gap: 10px;
+}
+
+.header button {
+    height: 2rem;
+    position: relative;
+    outline: none;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid rgb(73, 69, 255);
+    cursor: pointer;
+    background: rgb(240, 240, 255);
+    color: rgb(73, 69, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header #btn-create-folder:hover {
+    background: rgb(255, 255, 255);
+}
+
+.header #btn-upload-assets {
+    color: #fff;
+    background-color: rgb(73, 69, 255);
+}
+
+.header #btn-upload-assets * {
+    fill: #fff;
+}
+
+.header #btn-upload-assets:hover {
+    opacity: 0.9;
+}
+
+/* ============================================================= */
+
+.actions {
+    /* background-color: green; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.actions .check-box-container {
+    height: 30px;
+    width: 30px;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgb(192, 192, 207);
+    background-color: rgb(255, 255, 255);
+}
+
+.actions .check-box-container input {
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(73, 69, 255);
+}
+
+.actions>section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.actions>section .filters-container {
+    height: 2rem;
+    width: max-content;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px !important;
+    border-radius: 4px;
+    border: 1px solid rgb(192, 192, 207);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    gap: 10px;
+}
+
+.actions>section .filters-container svg {
+    padding-top: 4px;
+    color: rgb(58, 58, 58);
+}
+
+.actions .right-icons-container .right-icon-item {
+    height: 30px;
+    width: 30px;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgb(192, 192, 207);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.actions .right-icons-container .right-icon-item:hover {
+    border: 1px solid rgb(156, 156, 197);
+    background-color: rgb(255, 255, 255);
+    color: aliceblue;
+}
+
+/* ============================================================= */
+
+#btn-delete-move-container,
+#btn-delete-move-container .btn-delete-move {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 20px;
+}
+
+#btn-delete-move-container {
+    display: none;
+}
+
+#btn-delete-move-container p,
+#btn-delete-move-container p label,
+#btn-delete-move-container p span {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+#btn-delete-move-container .btn-delete-move .btn-delete {
+    background-color: rgba(255, 0, 0, 0.25);
+    border-color: rgba(255, 0, 0, 0.877);
+    color: #fff;
+}
+
+#btn-delete-move-container .btn-delete-move .btn-move {
+    background-color: rgba(22, 131, 255, 0.25);
+    border-color: rgba(0, 102, 255, 0.5);
+    color: #fff;
+}
+
+#btn-delete-move-container .btn-delete-move .btn-delete:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#btn-delete-move-container .btn-delete-move .btn-move:hover {
+    background-color: rgba(22, 131, 255, 0.5);
+}
+
+/* ============================================================= */
+.files-container {
+    min-height: calc(100vh - 200px);
+}
+
+.files-container h3 {
+    font-weight: 500;
+}
+
+
+.files-container .folders-container {
+    display: flex;
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.files-container .folders-container .folder-item {
+    padding: 12px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(234, 234, 239);
+    box-shadow: rgba(33, 33, 52, 0.1) 0px 1px 4px;
+    cursor: pointer;
+
+    min-width: 200px;
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.files-container .folders-container .folder-item .one input {
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(73, 69, 255);
+}
+
+.files-container .folders-container .folder-item .tree {
+    display: grid;
+    row-gap: 4px;
+}
+
+.files-container .folders-container .folder-item .tree h2 {
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.files-container .folders-container .folder-item .tree>div {
+    display: flex;
+}
+
+.files-container .folders-container .folder-item .tree>div p,
+.files-container .folders-container .folder-item .tree>div span {
+    font-weight: 400;
+    font-size: 0.7em;
+}
+
+.files-container .folders-container .folder-item .two svg,
+.files-container .folders-container .folder-item .two svg * {
+    color: rgb(102, 183, 241);
+    fill: rgb(102, 183, 241);
+    ;
+}
+
+
+/* ================================ */
+#add-folder-container {
+    background: rgba(50, 50, 77, 0.12);
+    inset: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: none;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    position: fixed;
+    z-index: 4;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#add-folder-container .add-folder-content {
+    max-width: 51.875rem;
+    width: 100%;
+    min-height: 150px;
+    padding: 0px !important;
+}
+
+#add-folder-container .add-folder-content .header,
+#add-folder-container .add-folder-content .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgb(246, 246, 249);
+    border-radius: 4px 4px 0px 0px;
+    padding: 5px 10px;
+}
+
+#add-folder-container .add-folder-content .header {
+    border-bottom: 1px solid rgb(234, 234, 239);
+    border-radius: 4px 4px 0 0;
+}
+
+#add-folder-container .add-folder-content .footer {
+    border-top: 1px solid rgb(234, 234, 239);
+    border-radius: 0 0 4px 4px;
+}
+
+#add-folder-container .add-folder-content .header h3 {
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+#add-folder-container .add-folder-content .header #btn-close-create-folder {
+    background-color: rgb(221, 239, 255);
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-folder-container .add-folder-content .body {
+    padding: 10px;
+}
+
+#add-folder-container .add-folder-content .body section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-folder-container .add-folder-content .body section div * {
+    display: block;
+}
+
+#add-folder-container .add-folder-content .body section div label {
+    font-weight: 400;
+    font-size: .8rem;
+    padding: 8px 0;
+}
+
+#add-folder-container .add-folder-content .body section div input,
+#add-folder-container .add-folder-content .body section div select {
+    border: 1px solid rgb(220, 220, 228);
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: rgb(50, 50, 77);
+    font-weight: 400;
+    font-size: 0.875rem;
+    display: block;
+    width: 100%;
+    background: inherit;
+    outline: none;
+    min-width: 200px;
+}
+
+#add-folder-container .add-folder-content .body section div select option {
+    padding: 5px;
+}
+
+
+#add-folder-container .add-folder-content .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 8px;
+}
+
+#add-folder-container .add-folder-content .footer .btn-create {
+    background-color: rgb(73, 69, 255);
+    color: white;
+    border-color: #fff;
+}
+
+#add-folder-container .add-folder-content .footer .btn-cancel:hover {
+    background-color: #fff;
+}
+
+#add-folder-container .add-folder-content .footer .btn-create:hover {
+    opacity: .9;
+}
+
+
+
+.app-container #folder-container {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+}
+
+.app-container #folder-container header {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.app-container #folder-container .btn-back {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(73, 69, 255);
+}
+
+.app-container #folder-container .btn-back svg {
+    fill: rgb(73, 69, 255);
+}
+
+.app-container #folder-container #path-container {
+    color: rgb(73, 69, 255);
+    font-size: 10px;
+}
+
+.app-container #folder-container #folder-assets-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.app-container .asset-item {
+    /* background: rgb(255, 255, 255); */
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(234, 234, 239);
+    box-shadow: rgba(33, 33, 52, 0.1) 0px 1px 4px;
+    height: 200px;
+    width: 200px;
+    /* padding: 5px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.app-container .asset-item .one {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+}
+
+.app-container .asset-item .two {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: rgba(234, 234, 250, 0.548);
+    height: 120px;
+}
+
+.app-container .asset-item .two img {
+    max-width: 90%;
+    height: 90%;
+}
+
+.app-container .asset-item .tree {
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.app-container .asset-item .tree div:first-child p{
+    font-size: 14px;
+}
+.app-container .asset-item .tree div:first-child p *{
+    font-size: 10px;
+}
+
+.app-container .asset-item .tree div:last-child p{
+    font-size: 12px;
+    background-color: aquamarine;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+/* ============================================================ */
+
+#upload-assets-container{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(56, 56, 56,.45) !important;
+    z-index: 9999;
+    overflow: hidden;
+}
+#upload-assets-content{
+    width: 80% !important;
+    width: 500px;
+    max-width: calc( 100% - 20px);
+    height: 80vh !important;
+    margin-right: 0 10px;
+}
+
+#upload-assets-container .input-upload-assets-container{
+    padding: 30px 0;
+    border: 1px dashed  rgb(73, 69, 255);
+    border-radius: 5px;
+}
+
+#uploaded-images-container{
+    gap: 50px;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#uploaded-images-container li{
+    height: 200px;
+    object-fit: contain;
+    border: 1px dashed rgb(102, 183, 241);
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#uploaded-images-container li img{
+    height: 150px;
+    object-fit: contain;
+}
+/* ============================================================ */

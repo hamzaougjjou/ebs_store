@@ -1,0 +1,8 @@
+
+#report{
+    max-width: 800px;
+    direction: ltr;
+}
+#report *{
+    direction: ltr;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Dashboard</title>
+
+    <script src="./../js/chartjs_2_8_0_min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+        <div class="sideMenu">
+            <header>
+                <img class="icon" src="./../img/entypo_wallet.svg" alt="logo" />
+                <h2>E B S</h2>
+            </header>
+            <nav>
+                <a href="./" class="active">
+                    <img src="./../img/teenyicons_home-solid.svg" class="icon" alt="home icon" />
+                    <p>Dashboard</p>
+                </a>
+                <a href="./">
+                    <img src="./../img/uis_chart.svg" class="icon" alt="statistic icon" />
+                    <p>statistic</p>
+                </a>
+                <a href="./">
+                    <img src="./../img/majesticons_mail.svg" class="icon" alt="mail icon" />
+                    <p>Mail</p>
+                </a>
+
+                <a href="./">
+                    <img src="./../img/eva_message-circle-fill.svg" class="icon" alt="mail icon" />
+                    <p>Mail</p>
+                </a>
+                <a href="./">
+                    <img src="./../img/iconamoon_profile-fill.svg" class="icon" alt="mail icon" />
+                    <p>Mail</p>
+                </a>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="info">
+                <header>
+                    <h1>Dashboard</h1>
+                    <div class="search">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M18.654 17.595L21.5835 20.523C21.7201 20.6645 21.7957 20.8539 21.794 21.0506C21.7923 21.2472 21.7134 21.4353 21.5744 21.5744C21.4353 21.7134 21.2472 21.7923 21.0506 21.794C20.8539 21.7957 20.6645 21.7201 20.523 21.5835L17.5935 18.654C15.6791 20.2942 13.2039 21.1291 10.6872 20.9836C8.17053 20.8382 5.808 19.7236 4.09537 17.8737C2.38275 16.0239 1.45317 13.5827 1.50169 11.0622C1.5502 8.54181 2.57305 6.13813 4.35559 4.35559C6.13813 2.57305 8.54181 1.5502 11.0622 1.50169C13.5827 1.45317 16.0239 2.38275 17.8737 4.09537C19.7236 5.808 20.8382 8.17053 20.9836 10.6872C21.1291 13.2039 20.2942 15.6791 18.654 17.5935V17.595ZM11.25 19.5C13.438 19.5 15.5365 18.6308 17.0836 17.0836C18.6308 15.5365 19.5 13.438 19.5 11.25C19.5 9.06196 18.6308 6.96354 17.0836 5.41637C15.5365 3.86919 13.438 3 11.25 3C9.06196 3 6.96354 3.86919 5.41637 5.41637C3.86919 6.96354 3 9.06196 3 11.25C3 13.438 3.86919 15.5365 5.41637 17.0836C6.96354 18.6308 9.06196 19.5 11.25 19.5Z"
+                                fill="#C1C1C1" />
+                        </svg>
+                        <input type="search" placeholder="Search..." />
+                    </div>
+                </header>
+
+                <section class="cards">
+                    <div class="cardItem"></div>
+                    <div class="cardItem"></div>
+                </section>
+
+                <div class="statisticContainer">
+                    <h1>Statistic</h1>
+                    <div class="statisticContainer">
+                        <canvas id="myLineChart"></canvas>
+                        <div class="footer">
+                            <section>
+                                <span></span>
+                                <p>Visirors</p>
+                            </section>
+                            <section>
+                                <span></span>
+                                <p>Singed in</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // const labels = Utils.months({ count: 7 });
+        var month = ["January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December"];
+
+        const data = {
+            labels: month,
+            datasets: [
+                {
+                    label: false,
+                    data: [65, 59, 80, 81, 56, 55, 40, 90, 90, 909, 834, 1200],
+                    fill: false,
+                    borderColor: '#685CE4',
+                    tension: 0
+                },
+                {
+                    label: false,
+                    data: [89, 784, 345, 2453, 495, 345, 345, 434, 984, 3455, 2453, 2600],
+                    fill: false,
+                    borderColor: '#5FCBFB',
+                    tension: 0
+                }
+
+            ],
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+
+            options: {
+                legend: {
+                    display: false
+                }
+            }
+
+        };
+        // Get the canvas element and create the chart
+        var ctx = document.getElementById('myLineChart').getContext('2d');
+
+        var myLineChart = new Chart(ctx, config);
+    </script>
+
+
+
+</body>
+
+</html>

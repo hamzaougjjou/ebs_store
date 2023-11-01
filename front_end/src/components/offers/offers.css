@@ -1,0 +1,44 @@
+
+
+/* product offers section */
+
+.best-offers-container {
+    margin: 25px;
+    background-color: rgb(105, 105, 105);
+}
+
+.offer-item-container{
+    position: relative;
+}
+.best-offers-container h1 {
+    text-align: center;
+    color: rgb(0, 140, 255);
+    padding: 10px;
+}
+
+.offer-item-container .discount {
+    position: absolute;
+    box-sizing: initial;
+    right: 0;
+    top: -6px;
+    width: 50px;
+    aspect-ratio: 1/1;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.offer-item-container .discount ,
+.offer-item-container .discount *{
+    color: white;
+}
+
+.best-offers-container .btn-add-to-cart{
+    background-color: mediumspringgreen !important;
+}

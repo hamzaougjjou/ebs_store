@@ -1,0 +1,63 @@
+.main-footer{
+    background-color: #1e90ff;
+    width: 100%;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-footer .aside-main{
+    width: calc(50% - 2.2px);
+    height: 100%;
+    display: inline-block;
+}
+.sub-footer{
+    background-color: rgb(2, 30, 72);
+    width: 100%;
+    min-height: 80px;
+    line-height: 80px;
+}
+.social-media-footer{
+    text-align: center;
+}
+.social-media-footer .social-media-link{
+    font-size: 20px;
+}
+.social-media-footer .social-media-link{
+    margin: 0 10px;
+    color: #fff;
+}
+.social-media-footer .social-media-link i{
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    line-height: 40px;
+    border-radius: 3px;
+}
+.social-media-footer .social-media-link .fa:hover{
+    background-color: rgb(255, 255, 255);
+}
+.social-media-footer .social-media-link .fa-facebook:hover{
+    color: blue;
+}
+.social-media-footer .social-media-link .fa-whatsapp:hover ,
+.social-media-footer .social-media-link .fa-phone:hover 
+{
+    color: green;
+}
+.social-media-footer .social-media-link .fa-youtube:hover 
+{
+    color: rgb(230, 71, 13);
+}
+.social-media-footer .social-media-link .fa-instagram:hover 
+{
+    color: rgb(193, 29, 252);
+}
+
+.sub-footer #copyright{
+    color: white;
+    text-align: center;
+
+}

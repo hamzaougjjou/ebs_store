@@ -1,0 +1,334 @@
+.books-container #books {
+    padding: 20px;
+    min-height: calc(100vh - 140px);
+    border: 1px solid #ada3a39a;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+.books-container .header {
+    padding: 20px;
+    min-height: 50px;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header {
+    padding: 20px;
+    min-height: 50px;
+    border: 1px solid #ada3a39a;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: dodgerblue;
+    fill: dodgerblue !important;
+}
+
+.header a * {
+    fill: dodgerblue !important;
+}
+
+.books-container .header .btn-create-book {
+    background-color: deepskyblue;
+    color: #fff;
+    opacity: .8;
+    font-weight: bold;
+}
+
+.books-container .header .btn-create-book:hover {
+    opacity: 1;
+}
+
+/* ============================ */
+
+.books-container .books-list {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.books-container .books-list .book {
+    min-height: 20px;
+    padding: 5px 8px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.books-container .books-list .image img {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    border: 1px solid gray;
+}
+
+/* .books-container .books-list .info{} */
+
+.books-container .books-list .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.books-container .books-list .actions .btn {
+    padding-bottom: 12px;
+    color: #fff;
+    font-weight: 600;
+    opacity: .8;
+}
+
+.books-container .books-list .actions .btn:hover {
+    opacity: 1;
+}
+
+.books-container .books-list .actions .btn:nth-child(1) {
+    background-color: yellowgreen;
+}
+
+.books-container .books-list .actions .btn:nth-child(2) {
+    background-color: rgb(250, 34, 34);
+}
+
+.books-container .books-list .actions .btn:nth-child(3) {
+    background-color: dodgerblue;
+}
+
+/* ======================================= */
+.create-book-container {
+    padding: 10px 20px;
+    background-color: #fff;
+    margin: 5px 10px 5px 0;
+}
+
+
+.create-book-container .row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.create-book-container .col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+}
+
+.create-book-container.col-75 {
+    /* -ms-flex: 75%;
+    /* IE10 */
+    /* flex: 75%; */
+    width: 100%;
+    background-color: rgb(189, 17, 17);
+}
+
+.create-book-container .col-25,
+.create-book-container .col-50,
+.create-book-container .col-75 {
+    padding: 0 16px;
+}
+
+.create-book-container .container {
+    /* background-color: #1ed4bc; */
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.create-book-container input[type=text] ,
+.create-book-container input ,
+.create-book-container select ,
+.create-book-container textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.create-book-container label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.create-book-container .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.create-book-container .btn {
+    background-color: #1ee03e;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    width: min-content;
+    opacity: .8;
+}
+.create-book-container .btn.btn-save {
+    background-color: #2196F3;
+}
+.create-book-container .btn:hover {
+    opacity: 1;
+}
+
+.create-book-container a {
+    color: #2196F3;
+}
+
+.create-book-container hr {
+    border: 1px solid lightgrey;
+}
+
+.create-book-container span.price {
+    float: right;
+    color: grey;
+}
+
+.create-book-container .description-container {
+    width: 100%;
+}
+
+.create-book-container .description-container textarea {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+/* The container */
+.has-offer-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 50px;
+    margin-top: 12px;
+}
+
+/* Hide the browser's default checkbox */
+.has-offer-container input {
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.has-offer-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.has-offer-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.has-offer-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.has-offer-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*  */
+#book-image.selected,
+.sub-images-selected span{
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    object-fit: cover;
+    border: 0px solid #fff;
+    position: relative;
+}
+.sub-images-selected{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.sub-images-selected span img{
+    width: 100px;
+    height: 100px;
+}
+.sub-images-selected span .btn-close{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(218, 15, 15);
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    display: block !important;
+}
+.sub-images-selected span .btn-close label{
+    position: absolute;
+    top: calc( 50% - 2px );
+    left:50%;
+    transform: translate( -50% , -50% );
+    cursor: pointer;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .create-book-container .row {
+        flex-direction: column-reverse;
+    }
+
+    .create-book-container .col-25 {
+        margin-bottom: 20px;
+    }
+}
